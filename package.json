@@ -1,12 +1,12 @@
 {
   "name": "ki-risikoanalyse-backend",
-  "version": "1.0.0",
-  "description": "Proxy-Backend für KI-Risikoanalyse Integration in GoHighLevel",
+  "version": "2.0.0",
+  "description": "Sicheres Backend für die KI-Risikoanalyse von Berufsumstieg.de",
   "main": "proxy_backend_server.js",
   "scripts": {
     "start": "node proxy_backend_server.js",
     "dev": "nodemon proxy_backend_server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test"
   },
   "keywords": [
     "ki",
@@ -18,15 +18,16 @@
   "author": "Berufsumstieg Team",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
+    "express": "^5.2.1",
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "openai": "^4.28.0"
+    "dotenv": "^17.4.2",
+    "openai": "^7.13.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=20.0.0"
   }
 }
